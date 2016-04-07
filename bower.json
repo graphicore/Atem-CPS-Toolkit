@@ -1,18 +1,19 @@
 {
-  "name": "Atem-MOM-Toolkit",
+  "name": "Atem-CPS-Toolkit",
   "version": "0.0.0",
   "homepage": "https://github.com/graphicore/Atem-MOM-Toolkit",
   "authors": [
     "Lasse Fister <commander@graphicore.de>"
   ],
-  "description": "Atem-Project: shared tools used to render the Metapolator Object Model in user interfaces.",
+  "description": "Atem-Project: shared tools used to render the CPS/OMA in user interfaces.",
   "moduleType": [
     "amd"
   ],
   "keywords": [
     "Atem",
     "Metapolator",
-    "MOM"
+    "CPS",
+    "OMA"
   ],
   "license": "GPLv3",
   "ignore": [
@@ -25,8 +26,6 @@
   ],
   "dependencies": {
     "Atem-CPS": "graphicore/Atem-CPS",
-    "Atem-Errors": "graphicore/Atem-Errors",
-    "Atem-MOM": "git@github.com:graphicore/Atem-MOM.git",
-    "Atem-Pen-Case": "git@github.com:graphicore/Atem-Pen-Case.git"
+    "Atem-Errors": "graphicore/Atem-Errors"
   }
 }
