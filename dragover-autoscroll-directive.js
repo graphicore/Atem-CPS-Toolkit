@@ -1,12 +1,11 @@
 define([
-    'angular'
     ], function(
-    angular
 ) {
     "use strict";
 
     function DragoverAutoscrollDirective() {
         function link(scope, element, attrs, controller) {
+            //jshint unused: vars
             var elem = element[0]
               , change
               , scrolling

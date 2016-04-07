@@ -1,13 +1,11 @@
 define([
-    'metapolator/errors'
-  , 'angular'
+    'Atem-CPS/errors'
     ], function(
     errors
-  , angular
 ) {
     "use strict";
 
-    var UISetupError = errors.UISetup;
+    var assert = errors.assert;
 
     /**
      * used like this
@@ -22,12 +20,10 @@ define([
             var dragDataType = attrs.mtkDrag// like: 'cps/property'
               , dragData = scope.$eval(attrs.mtkDragData)
               ;
-            if(!dragDataType)
-                throw new UISetupError('Drag data-type is missing please use '
+            assert(dragDataType, 'Drag data-type is missing please use '
                             +'the mtk-drag="{type: \'my/datatype\', data: [my, data]" attribute.');
 
-            if(!dragData)
-                throw new UISetupError('Drag data is missing please use '
+            assert(dragDataType, 'Drag data is missing please use '
                             +'the mtk-drag="{type: \'my/datatype\', data: [my, data]" attribute.');
 
             function dragstartHandler(event) {
@@ -58,6 +54,7 @@ define([
             // and in the drop handler.
             // Making the execution of the move async would also help.
             function dragendHandler(event) {
+                //jshint unused:vars
                 element.removeClass('dragging');
                 dragDataService.remove(dragDataType);
             }
