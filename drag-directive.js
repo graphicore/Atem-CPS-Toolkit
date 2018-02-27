@@ -20,11 +20,12 @@ define([
             var dragDataType = attrs.mtkDrag// like: 'cps/property'
               , dragData = scope.$eval(attrs.mtkDragData)
               ;
-            assert(dragDataType, 'Drag data-type is missing please use '
-                            +'the mtk-drag="{type: \'my/datatype\', data: [my, data]" attribute.');
 
-            assert(dragDataType, 'Drag data is missing please use '
-                            +'the mtk-drag="{type: \'my/datatype\', data: [my, data]" attribute.');
+            assert(dragDataType, 'Drag data-type is missing please use '
+                            +'the mtk-drag="my/datatype" attribute.');
+
+            assert(dragData, 'Drag data is missing please use '
+                            +'the mtk-drag-data="[my, data]" attribute.');
 
             function dragstartHandler(event) {
                 // TODO: what if we don't want to use a 'mtk-drag-handle' but instead the
