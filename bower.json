@@ -26,6 +26,7 @@
   ],
   "dependencies": {
     "Atem-CPS": "graphicore/Atem-CPS",
-    "Atem-Errors": "graphicore/Atem-Errors"
+    "Atem-Errors": "graphicore/Atem-Errors",
+    "Atem-Math-Tools": "graphicore/Atem--Math-Tools"
   }
 }
