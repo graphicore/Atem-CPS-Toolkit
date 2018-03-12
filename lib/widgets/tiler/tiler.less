@@ -1,0 +1,38 @@
+
+atk-tiler {
+  position: relative;
+  margin: 15px;
+}
+
+atk-tiler > atk-tiler /* atk-tiler > * ??? */{
+  position: relative; /* absolute in restricted space mode...? */
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+atk-tiler > .info {
+    background: white;
+    opacity: .4;
+    position: absolute;
+}
+
+atk-tiler,
+atk-tiler > * {
+    display: block;
+    box-sizing: border-box;
+}
+
+
+atk-tiler {
+    background: rgba(50, 255, 0,.2);
+}
+
+atk-placeholder{
+    background-image: url("http://via.placeholder.com/300x100?text=placeholder");
+    background-size: cover;
+    background-position: center;
+    min-height: 50px;
+    min-width: 50px;
+}
